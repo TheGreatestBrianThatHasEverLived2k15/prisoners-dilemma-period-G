@@ -53,7 +53,10 @@ def play_round(player1, player2, history1, history2, score1, score2):
     # Do nothing if someone's code returns an improper action
         new_score1 = score1
         new_score2 = score2
-        
+    
+    opponent_enemy = player[12, 2,4,6,8,10,14]
+    opponent_friendly = player[1,3,5,7,9,11,13,15]
+    
     else: 
     #Both players' code provided proper actions
         if action1 == 'c':
@@ -485,49 +488,13 @@ def get_action(player, history, opponent_history, score, opponent_score, getting
         if getting_team_name:
             return 'Strategic Betrayer'
         else:
-                if player == 13:
-                    return 'b'
-                elif player == 7:
-                    return 'b'
-                elif player == 11:
-                    return 'b'
-                elif player == 8:
-                    return 'c'
-                elif player == 9:
-                    return 'b'
-                elif player == 1:
-                    return 'b'
-                elif player == 2:
-                    return 'c'
-                elif player == 1:
-                    return 'b'
-                elif player == 3:
-                    return 'b'
-                elif player == 4:
-                    return 'c'
-                elif player == 5:
-                    return 'b'
-                elif player == 6:
-                    return 'c'
-                elif player == 10:
-                    return 'c'
-                elif player == 12:
-                    return 'c'
-                elif player == 14:
-                    return 'c'
-                elif player == 16:
-                    return 'c'
-                elif player == 17:
-                    return 'b'
-                elif player == 18:
-                    return 'c'
-                elif player == 19:
-                    return 'b'
-                elif player == 0:
-                    return 'b'
-
+           if opponent_enemy 
+                return 'b'
+            elif opponent_friendly
+                return 'c'
+           
                 else:
-                    return 'c'
+                    return 'b'
  
     
 
