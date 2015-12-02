@@ -480,7 +480,8 @@ def get_action(player, history, opponent_history, score, opponent_score, getting
     
 
 
-
+    opponent_enemy = player[12, 2,4,6,8,10,14]
+    opponent_friendly = player[1,3,5,7,9,11,13,15]
     ######
     ######
     #
