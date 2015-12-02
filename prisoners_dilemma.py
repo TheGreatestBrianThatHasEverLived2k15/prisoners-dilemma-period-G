@@ -54,8 +54,7 @@ def play_round(player1, player2, history1, history2, score1, score2):
         new_score1 = score1
         new_score2 = score2
     
-    opponent_enemy = player[12, 2,4,6,8,10,14]
-    opponent_friendly = player[1,3,5,7,9,11,13,15]
+
     
     else: 
     #Both players' code provided proper actions
@@ -118,7 +117,8 @@ def get_action(player, history, opponent_history, score, opponent_score, getting
         else:
             return 'c'
 
-    
+    opponent_enemy = player[12, 2,4,6,8,10,14]
+    opponent_friendly = player[1,3,5,7,9,11,13,15]
         
             
                 
@@ -492,7 +492,7 @@ def get_action(player, history, opponent_history, score, opponent_score, getting
                 return 'b'
             elif opponent_friendly
                 return 'c'
-           
+
                 else:
                     return 'b'
  
